@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--
+        A color scheme menu item used for demonstrating the use of SwipeRefreshLayout's color
+        scheme functionality. This kind of menu item should not be incorporated into your app,
+        it just to demonstrate the use of color. Instead you should choose a color scheme based
+        off of your application's branding.
+    -->
+    <item
+        android:id="@+id/menu_color_scheme"
+        android:title="@string/menu_color_scheme"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_color_scheme_1"
+                    android:title="@string/menu_color_scheme_1" />
+
+                <item
+                    android:id="@+id/menu_color_scheme_2"
+                    android:title="@string/menu_color_scheme_2" />
+
+                <item
+                    android:id="@+id/menu_color_scheme_3"
+                    android:title="@string/menu_color_scheme_3" />
+
+            </group>
+        </menu>
+    </item>
+
+    <!--
+        Refresh action item which should be presented in the Action Bar's overflow area
+        by setting showAsAction='never'. This is so that users which are not using touch input
+        can still perform a refresh.
+    -->
+    <item
+        android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh"
+        android:showAsAction="ifRoom" />
+
+</menu>

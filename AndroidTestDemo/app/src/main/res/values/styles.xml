@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- 自定义Loading Dialog -->
+    <style name="loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+    <style name="Widget.PicassoSample.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Widget.PicassoSample.Overlay" parent="android:Widget">
+        <item name="android:background">#90000000</item>
+    </style>
+
+    <style name="Widget.PicassoSample.ActionBarTitle" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <!-- Use 'dp' so that the user's font preference doesn't affect the action bar. -->
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Widget.PicassoSample.ActionBarButton" parent="android:Widget.Button">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <!-- Use 'dp' so that the user's font preference doesn't affect the action bar. -->
+        <item name="android:textSize">13dp</item>
+        <item name="android:background">@drawable/overlay_selector</item>
+    </style>
+
+    <style name="Widget.PicassoSample.ListView" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:divider">@color/list_divider</item>
+    </style>
+
+    <style name="Widget.PicassoSample.ListItem" parent="android:Widget.TextView">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Widget.PicassoSample.DescriptionUrl" parent="android:Widget.TextView">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.PicassoSample.DescriptionText" parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- 分段显示-->
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="colors" format="color|reference" />
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+    </declare-styleable>
+    <style name="CardView.Content" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

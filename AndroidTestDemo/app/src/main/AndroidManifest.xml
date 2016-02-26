@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chni.lidong.androidtestdemo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestTabLayout"
+            android:label="@string/title_activity_test_tab_layout"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".MainActivity2" >
+        </activity>
+        <activity android:name=".swiperefreshlistfragment.MainActivity" >
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".swiperefreshlistfragment.NoteActivity" >
+        </activity>
+        <activity
+            android:name=".swiperefreshlistfragment.MainActivityG1"
+            android:label="@string/title_activity_main_activity_g1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".swiperefreshlistfragment.RxAndroidDemo"
+            android:label="@string/title_activity_rx_java_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".swiperefreshlistfragment.RxJavaDemo"
+            android:label="@string/title_activity_rx_java_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".segmentcontrol.view.Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".supertooltips.view.Main5Activity"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".data_binding.DataBindingDemo"
+            android:label="@string/title_activity_data_binding_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".data_binding.MovieActitiviy"
+            android:label="@string/title_activity_data_binding_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".snowfall.view.SnowAllActivity"
+            android:label="@string/title_activity_snow_all"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".webService.WebServiceDemo"
+            android:label="@string/title_activity_web_service_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".webService.RecyleViewDemo"
+            android:label="@string/title_activity_recyle_view_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".upload.Main6Activity"
+            android:label="@string/title_activity_main6"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".loading.Main7Activity"
+            android:label="@string/title_activity_main7"
+            android:theme="@style/AppTheme" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar_tools"/>
+    <include layout="@layout/content_main" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/padding_50"
+       android:layout_gravity="bottom"
+       android:visibility="visible">
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="微信1"
+           android:gravity="center"
+           android:button="@null"
+           android:textSize="25sp"
+           android:id="@+id/button3" />
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="微信2"
+           android:textSize="25sp"
+           android:gravity="center"
+           android:button="@null"
+           android:id="@+id/button4" />
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="微信3"
+           android:button="@null"
+           android:textSize="25sp"
+           android:gravity="center"
+           android:id="@+id/button5" />
+
+       <RadioButton
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="微信4"
+           android:textSize="25sp"
+           android:gravity="center"
+           android:button="@null"
+           android:id="@+id/button6" />
+   </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
